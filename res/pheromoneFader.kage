@@ -1,0 +1,6 @@
+package main
+
+func Fragment(position vec4, texCoord vec2, color vec4) vec4 {
+  c := imageSrc0UnsafeAt(texCoord)
+  return vec4(c.rgb*0.95, 1.0)
+}
